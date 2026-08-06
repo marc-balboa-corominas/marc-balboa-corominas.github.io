@@ -2,4 +2,14 @@
 
 Personal research and technical website of Marc Balboa Corominas.
 
-Published with GitHub Pages.
+## Local preview
+
+```powershell
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
+
+## Deployment
+
+The site is published through GitHub Pages from the `main` branch.

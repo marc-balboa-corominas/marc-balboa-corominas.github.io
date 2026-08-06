@@ -3,55 +3,176 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
   <title>Research | Marc Balboa Corominas</title>
-  <meta name="description" content="Research interests and current scientific work of Marc Balboa Corominas.">
+  <meta name="description" content="Research interests and scientific approach of Marc Balboa Corominas.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="site-title" href="index.html">Marc Balboa Corominas</a>
+  <div class="page-shell page-shell-research">
+    
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Marc Balboa Corominas, home">
+      <span class="brand-mark" aria-hidden="true">MBC</span>
+      <span class="brand-name">Marc Balboa Corominas</span>
+    </a>
 
+    <div class="header-right">
       <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a aria-current="page" href="research.html">Research</a>
-        <a href="projects.html">Projects</a>
+        <a  href="index.html">Home</a>
+        <a  href="about.html">About</a>
+        <a aria-current='page' href="research.html">Research</a>
+        <a  href="projects.html">Projects</a>
       </nav>
+      
+<div class="social-links" aria-label="Professional profiles">
+  <a class="icon-link" href="https://github.com/marc-balboa-corominas" rel="me" aria-label="GitHub">
+    <img src="assets/icons/github.svg" alt="">
+  </a>
+  <a class="icon-link" href="https://orcid.org/0009-0006-7571-9193" rel="me" aria-label="ORCID">
+    <img src="assets/icons/orcid.svg" alt="">
+  </a>
+  <a class="icon-link" href="https://www.linkedin.com/in/marc-balboa-corominas-b39a37172" rel="me" aria-label="LinkedIn">
+    <img src="assets/icons/linkedin.svg" alt="">
+  </a>
+</div>
+
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="container">
-    <section class="page-intro">
-      <p class="eyebrow">Scientific work</p>
-      <h1>Research</h1>
 
-      <p class="intro">
-        Independent work at the intersection of computational astrophysics,
-        scientific software, and reproducible data analysis.
+    <section class="page-hero compact-hero container">
+      <div>
+        <p class="eyebrow">Research</p>
+        <h1>Computational astrophysics with methodological discipline.</h1>
+      </div>
+      <p>
+        Research interests centered on astronomical time series, scientific
+        software, detection robustness, and reproducible inference.
       </p>
+    </section>
+  </div>
 
-      <h2>Areas of interest</h2>
-      <ul class="interest-list">
-        <li>Computational astrophysics</li>
-        <li>Astronomical data analysis</li>
-        <li>Time-series methods</li>
-        <li>Scientific software</li>
-        <li>Reproducible computational research</li>
-      </ul>
+  <main>
+    <section class="section container research-layout">
+      <aside class="research-index">
+        <p class="eyebrow eyebrow-dark">Research map</p>
+        <h2>Four connected areas</h2>
+        <p>Select an area to expand its scope.</p>
+      </aside>
 
-      <p class="note">
-        Detailed project pages and research updates will be added when the
-        corresponding material is ready for public inspection.
-      </p>
+      <div class="research-accordion">
+        <details open>
+          <summary>
+            <span>01</span>
+            <div>
+              <strong>Astronomical time series</strong>
+              <small>Signals, variability and preprocessing sensitivity</small>
+            </div>
+          </summary>
+          <div class="details-content">
+            <p>
+              Variability, transient signals, periodic and quasi-periodic structure,
+              and the way data windows and preprocessing choices affect interpretation.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <span>02</span>
+            <div>
+              <strong>Computational astrophysics</strong>
+              <small>Transparent analysis of observational data</small>
+            </div>
+          </summary>
+          <div class="details-content">
+            <p>
+              Reproducible analysis of astronomical datasets using explicit
+              configurations, traceable code, and documented analytical boundaries.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <span>03</span>
+            <div>
+              <strong>Detection robustness</strong>
+              <small>Assumptions, numerical choices and selection effects</small>
+            </div>
+          </summary>
+          <div class="details-content">
+            <p>
+              Sensitivity to model assumptions, numerical settings, event windows,
+              synthetic controls, injection–recovery tests, and held-out validation.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <span>04</span>
+            <div>
+              <strong>Scientific software</strong>
+              <small>Provenance, automation and inspectable decisions</small>
+            </div>
+          </summary>
+          <div class="details-content">
+            <p>
+              Research tools that automate repetitive work while preserving provenance,
+              testability, and the visibility of methodological decisions.
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container method-strip">
+        <div>
+          <p class="eyebrow eyebrow-dark">Method priorities</p>
+          <h2>Evidence before narrative</h2>
+          <p>
+            Reproducibility and robustness are treated as part of the scientific
+            result, not merely as implementation details.
+          </p>
+        </div>
+
+        <ul class="check-list">
+          <li>Explicit analysis boundaries</li>
+          <li>Versioned code and configurations</li>
+          <li>Synthetic and observational checks</li>
+          <li>Held-out validation where applicable</li>
+          <li>Claims proportional to evidence</li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>© 2026 Marc Balboa Corominas</p>
-    </div>
-  </footer>
+  
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Marc Balboa Corominas</p>
+    
+<div class="social-links" aria-label="Professional profiles">
+  <a class="icon-link" href="https://github.com/marc-balboa-corominas" rel="me" aria-label="GitHub">
+    <img src="assets/icons/github.svg" alt="">
+  </a>
+  <a class="icon-link" href="https://orcid.org/0009-0006-7571-9193" rel="me" aria-label="ORCID">
+    <img src="assets/icons/orcid.svg" alt="">
+  </a>
+  <a class="icon-link" href="https://www.linkedin.com/in/marc-balboa-corominas-b39a37172" rel="me" aria-label="LinkedIn">
+    <img src="assets/icons/linkedin.svg" alt="">
+  </a>
+</div>
+
+  </div>
+</footer>
+
 </body>
 </html>
