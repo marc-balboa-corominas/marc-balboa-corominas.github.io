@@ -1373,3 +1373,237 @@ html {
     flex-direction: column;
   }
 }
+
+
+/* =========================================================
+   Version 6 — dual professional/scientific profile
+   and dynamic About timeline
+   ========================================================= */
+
+.home-page .hero {
+  grid-template-columns: minmax(0, 1.3fr) minmax(330px, 0.82fr);
+}
+
+.home-page .profile-list > div {
+  padding-block: 0.7rem;
+}
+
+.home-page .profile-list dd {
+  line-height: 1.42;
+}
+
+/* Dynamic About layout */
+
+.about-page .education-section {
+  display: block;
+}
+
+.education-explorer {
+  display: grid;
+  align-items: start;
+  gap: 4.5rem;
+  grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1.3fr);
+  padding-block: 1.5rem 5rem;
+}
+
+.education-companion {
+  position: sticky;
+  top: 2rem;
+  min-height: 29rem;
+  padding: 1.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.045)
+    );
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.17);
+  backdrop-filter: blur(12px);
+}
+
+.education-companion h2 {
+  margin-bottom: 1.6rem;
+  color: #ffffff;
+}
+
+.active-education {
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.active-step {
+  display: flex;
+  gap: 0.38rem;
+  margin-bottom: 1.2rem;
+  color: #91a0b9;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.active-step span:first-child {
+  color: var(--cyan);
+}
+
+.active-years {
+  margin-bottom: 0.55rem;
+  color: var(--cyan);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.active-education h3 {
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+}
+
+.active-institution {
+  margin-bottom: 0.8rem;
+  color: #d8e0ef;
+  font-weight: 680;
+}
+
+.active-level {
+  margin-bottom: 0;
+  color: #9eacc1;
+  font-size: 0.9rem;
+}
+
+.timeline-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.58rem;
+  margin-top: 2rem;
+}
+
+.timeline-nav-dot {
+  width: 0.68rem;
+  height: 0.68rem;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.timeline-nav-dot:hover,
+.timeline-nav-dot:focus-visible,
+.timeline-nav-dot.is-active {
+  border-color: var(--cyan);
+  background: var(--cyan);
+}
+
+.about-page .education-timeline {
+  --year-column: 10rem;
+  --rail-center: calc(var(--year-column) / 2);
+  gap: 1.25rem;
+}
+
+.about-page .education-timeline::before {
+  left: calc(var(--rail-center) - 1px);
+}
+
+.about-page .education-entry {
+  grid-template-columns: var(--year-column) minmax(0, 1fr);
+  scroll-margin-top: 7rem;
+  opacity: 0.76;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.about-page .education-entry.is-active {
+  opacity: 1;
+  transform: translateX(0.2rem);
+}
+
+.about-page .year-block {
+  width: 100%;
+}
+
+.education-level {
+  display: inline-flex;
+  margin-bottom: 0.75rem;
+  padding: 0.32rem 0.58rem;
+  border: 1px solid #d3dcf1;
+  border-radius: 999px;
+  color: #48617f;
+  background: #f3f6fb;
+  font-size: 0.72rem;
+  font-weight: 760;
+}
+
+.about-page .education-card {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.about-page .education-entry.is-active .education-card {
+  border-color: rgba(85, 216, 205, 0.55);
+  box-shadow:
+    0 22px 60px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(85, 216, 205, 0.08);
+}
+
+.about-page .education-entry.is-active .year-block {
+  border-color: rgba(85, 216, 205, 0.65);
+  color: #ffffff;
+}
+
+@media (max-width: 920px) {
+  .home-page .hero,
+  .education-explorer {
+    grid-template-columns: 1fr;
+  }
+
+  .education-companion {
+    position: relative;
+    top: auto;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .education-explorer {
+    gap: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .education-companion {
+    padding: 1.25rem;
+  }
+
+  .about-page .education-timeline {
+    --year-column: 1fr;
+  }
+
+  .about-page .education-timeline::before {
+    display: none;
+  }
+
+  .about-page .education-entry {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+
+  .about-page .year-block {
+    width: fit-content;
+    min-height: auto;
+    margin-left: 0;
+    padding: 0.48rem 0.7rem;
+  }
+
+  .about-page .education-entry.is-active {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-page .education-entry {
+    transition: none;
+  }
+}
