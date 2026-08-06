@@ -5,120 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#11101d">
   <title>Projects | Marc Balboa Corominas</title>
-  <meta name="description" content="Selected projects by Marc Balboa Corominas.">
+  <meta name="description" content="Selected scientific and technical projects by Marc Balboa Corominas.">
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="projects-page">
   <div class="projects-shell">
     <header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Marc Balboa Corominas, home">
-      <span class="brand-mark" aria-hidden="true">MBC</span>
-      <span class="brand-name">Marc Balboa Corominas</span>
-    </a>
-    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="research.html">Research</a><a aria-current="page" href="projects.html">Projects</a></nav>
-  </div>
-</header>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Marc Balboa Corominas, home">
+          <span class="brand-mark" aria-hidden="true">MBC</span>
+          <span class="brand-name">Marc Balboa Corominas</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="research.html">Research</a>
+          <a aria-current="page" href="projects.html">Projects</a>
+        </nav>
+      </div>
+    </header>
+
     <main>
       <section class="page-hero compact-hero container projects-intro">
-        <div><p class="eyebrow">Projects</p><h1>Selected scientific and technical work.</h1></div>
+        <div>
+          <p class="eyebrow">Projects</p>
+          <h1>Selected scientific and technical work.</h1>
+        </div>
         <p>Explore public projects and work that is still being prepared for release.</p>
       </section>
+
       <section class="projects-browser-section container">
         <div class="project-browser" data-project-browser>
-        <aside class="project-selector" aria-label="Project selector">
-          <p class="eyebrow eyebrow-dark">Project explorer</p>
+          <aside class="project-selector" aria-label="Project selector">
+            <p class="eyebrow eyebrow-dark">Project explorer</p>
 
-          <button class="project-tab is-active" type="button" data-project-target="firstlight" aria-pressed="true">
-            <span class="project-tab-index">01</span>
-            <span>
-              <strong>FirstLight</strong>
-              <small>Public · Scientific software</small>
-            </span>
-          </button>
+            <button class="project-tab is-active" type="button" data-project-target="firstlight" aria-pressed="true">
+              <span class="project-tab-index">01</span>
+              <span>
+                <strong>FirstLight</strong>
+                <small>Public · Scientific software</small>
+              </span>
+            </button>
 
-          <button class="project-tab" type="button" data-project-target="research-development" aria-pressed="false">
-            <span class="project-tab-index">02</span>
-            <span>
-              <strong>Research in development</strong>
-              <small>Private · Preparing release</small>
-            </span>
-          </button>
-        </aside>
+            <button class="project-tab" type="button" data-project-target="research-development" aria-pressed="false">
+              <span class="project-tab-index">02</span>
+              <span>
+                <strong>Research in development</strong>
+                <small>Private · Preparing release</small>
+              </span>
+            </button>
+          </aside>
 
-        <div class="project-stage">
-          <article class="project-panel is-active" data-project-panel="firstlight">
-            <div class="project-stage-header">
-              <div>
-                <p class="project-type">Astronomical transient software</p>
-                <h2>FirstLight</h2>
+          <div class="project-stage">
+            <article class="project-panel is-active" data-project-panel="firstlight">
+              <div class="project-stage-header">
+                <div>
+                  <p class="project-type">Astronomical transient software</p>
+                  <h2>FirstLight</h2>
+                </div>
+                <span class="status-pill status-public">Public</span>
               </div>
-              <span class="status-pill status-public">Public</span>
-            </div>
 
-            <p class="project-lead">
-              Low-latency hostless transient triage for TNS reporting and
-              follow-up prioritization.
-            </p>
+              <p class="project-lead">Low-latency hostless transient triage for TNS reporting and follow-up prioritization.</p>
+              <p class="project-description">FirstLight supports structured candidate evaluation through automated data handling, transparent decision logic, and reproducible outputs.</p>
 
-            <p>
-              FirstLight supports structured candidate evaluation through automated
-              data handling, transparent decision logic, and reproducible outputs.
-            </p>
+              <dl class="project-facts">
+                <div><dt>Domain</dt><dd>Astronomical transients</dd></div>
+                <div><dt>Type</dt><dd>Scientific software</dd></div>
+                <div><dt>Core language</dt><dd>Python</dd></div>
+                <div><dt>Priorities</dt><dd>Automation, traceability, reproducibility</dd></div>
+              </dl>
 
-            <dl class="project-facts">
-              <div><dt>Domain</dt><dd>Astronomical transients</dd></div>
-              <div><dt>Type</dt><dd>Scientific software</dd></div>
-              <div><dt>Core language</dt><dd>Python</dd></div>
-              <div><dt>Priorities</dt><dd>Automation, traceability, reproducibility</dd></div>
-            </dl>
-
-            <div class="actions">
-              <a class="button button-primary" href="https://github.com/marc-balboa-corominas/FirstLight">Open repository</a>
-            </div>
-          </article>
-
-          <article class="project-panel" data-project-panel="research-development" hidden>
-            <div class="project-stage-header">
-              <div>
-                <p class="project-type">Independent computational research</p>
-                <h2>Research in development</h2>
+              <div class="actions">
+                <a class="button button-primary" href="https://github.com/marc-balboa-corominas/FirstLight">Open repository</a>
               </div>
-              <span class="status-pill status-private">Private</span>
-            </div>
+            </article>
 
-            <p class="project-lead">
-              A method-first computational astrophysics project is currently being
-              prepared for staged public release.
-            </p>
+            <article class="project-panel" data-project-panel="research-development" hidden>
+              <div class="project-stage-header">
+                <div>
+                  <p class="project-type">Independent scientific research</p>
+                  <h2>Research in development</h2>
+                </div>
+                <span class="status-pill status-private">Private</span>
+              </div>
 
-            <p>
-              The public page will be added only when the project scope, documentation,
-              methodological status, and limitations can be presented clearly.
-            </p>
+              <p class="project-lead">An independent astrophysics project is currently being prepared for staged public release.</p>
+              <p class="project-description">The public page will be added when the scope, documentation, methodological status, and limitations are ready for external review.</p>
 
-            <dl class="project-facts">
-              <div><dt>Status</dt><dd>Active development</dd></div>
-              <div><dt>Public material</dt><dd>Not released yet</dd></div>
-              <div><dt>Release principle</dt><dd>Evidence and documentation first</dd></div>
-            </dl>
-          </article>
+              <dl class="project-facts">
+                <div><dt>Status</dt><dd>Active development</dd></div>
+                <div><dt>Public material</dt><dd>Not released yet</dd></div>
+                <div><dt>Release principle</dt><dd>Evidence and documentation first</dd></div>
+              </dl>
+            </article>
+          </div>
         </div>
-      </div>
-    
       </section>
     </main>
+
     <footer class="site-footer projects-footer">
-  <div class="container footer-inner">
-    <p>© 2026 Marc Balboa Corominas</p>
-    <div class="social-links" aria-label="Professional profiles">
-  <a class="icon-link" href="https://github.com/marc-balboa-corominas" rel="me" aria-label="GitHub"><img src="assets/icons/github.svg" alt=""></a>
-  <a class="icon-link" href="https://orcid.org/0009-0006-7571-9193" rel="me" aria-label="ORCID"><img src="assets/icons/orcid.svg" alt=""></a>
-  <a class="icon-link" href="https://www.linkedin.com/in/marc-balboa-corominas-b39a37172" rel="me" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
-</div>
-  </div>
-</footer>
+      <div class="container footer-inner">
+        <p>© 2026 Marc Balboa Corominas</p>
+        <div class="social-links" aria-label="Professional profiles">
+          <a class="icon-link" href="https://github.com/marc-balboa-corominas" rel="me" aria-label="GitHub"><img src="assets/icons/github.svg" alt=""></a>
+          <a class="icon-link" href="https://orcid.org/0009-0006-7571-9193" rel="me" aria-label="ORCID"><img src="assets/icons/orcid.svg" alt=""></a>
+          <a class="icon-link" href="https://www.linkedin.com/in/marc-balboa-corominas-b39a37172" rel="me" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+        </div>
+      </div>
+    </footer>
   </div>
   <script src="assets/js/projects.js"></script>
 </body>
