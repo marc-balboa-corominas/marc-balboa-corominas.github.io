@@ -2,8 +2,12 @@
 
 Personal research and technical website of Marc Balboa Corominas.
 
-This version distinguishes the professional technology path from the
-independent scientific path and adds a dynamic academic timeline.
+Version 7 finalizes:
+- the professional and scientific dual profile;
+- the science-communication direction on Home;
+- stable scroll-driven behavior in the About timeline;
+- selective text justification;
+- vertically aligned introductory copy across internal pages.
 
 ## Local preview
 

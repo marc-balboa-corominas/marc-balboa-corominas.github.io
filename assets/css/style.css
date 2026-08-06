@@ -1607,3 +1607,119 @@ html {
     transition: none;
   }
 }
+
+
+/* =========================================================
+   Version 7 — final typography and stable timeline behavior
+   ========================================================= */
+
+/* Internal-page introductory text should sit optically centered
+   beside the title rather than hanging lower in the grid. */
+.page-hero {
+  align-items: center;
+}
+
+.page-hero > p {
+  align-self: center;
+  margin: 0;
+}
+
+/* Selective justification for longer explanatory copy.
+   Headings, navigation, labels, short summaries, and mobile text
+   remain left-aligned for readability. */
+.hero-intro,
+.hero-support,
+.education-card > p:last-child,
+.details-content p,
+.project-description,
+.project-lead {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+/* Keep the Home copy visually balanced after adding the
+   science-communication paragraph. */
+.home-page .hero-copy {
+  max-width: 790px;
+}
+
+.home-page .hero-support {
+  max-width: 700px;
+}
+
+/* About: the companion remains centered in the viewport while
+   the timeline advances, and the active card changes deterministically. */
+.education-explorer {
+  align-items: stretch;
+}
+
+.education-companion {
+  position: sticky;
+  top: 50vh;
+  align-self: start;
+  min-height: 29rem;
+  transform: translateY(-50%);
+  transition: none;
+}
+
+.about-page .education-entry {
+  opacity: 0.72;
+  transform: none;
+}
+
+.about-page .education-entry.is-active {
+  opacity: 1;
+  transform: none;
+}
+
+.about-page .education-entry.is-active .education-card,
+.about-page .education-entry.is-active .year-block {
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease;
+}
+
+/* Slightly more vertical room prevents the final entry from reaching
+   the footer before the left companion has completed its sticky range. */
+.about-page .education-timeline {
+  padding-bottom: 10vh;
+}
+
+/* Project and Research headings: keep the explanatory paragraph
+   visually centered against the title block. */
+.projects-shell .page-hero,
+.research-shell .page-hero,
+.about-shell .page-hero {
+  align-items: center;
+}
+
+@media (max-width: 920px) {
+  .education-companion {
+    position: relative;
+    top: auto;
+    min-height: auto;
+    transform: none;
+  }
+
+  .about-page .education-timeline {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-intro,
+  .hero-support,
+  .education-card > p:last-child,
+  .details-content p,
+  .project-description,
+  .project-lead {
+    text-align: left;
+    hyphens: none;
+  }
+
+  .page-hero > p {
+    align-self: start;
+  }
+}
