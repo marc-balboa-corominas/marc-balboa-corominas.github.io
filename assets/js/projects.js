@@ -1,4 +1,3 @@
-
 const browser = document.querySelector("[data-project-browser]");
 if (browser) {
   const tabs = [...browser.querySelectorAll("[data-project-target]")];

@@ -11,7 +11,6 @@
 </head>
 <body>
 <div class="site-shell projects-shell">
-
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="Marc Balboa Corominas, home">
@@ -26,16 +25,14 @@
     </nav>
   </div>
 </header>
-
 <main>
   <section class="page-hero container">
     <div>
       <p class="eyebrow">Projects</p>
       <h1>Selected scientific and technical work.</h1>
     </div>
-    <p>Explore public projects and work that is still being prepared for release.</p>
+    <p>Explore public scientific software and independent research projects.</p>
   </section>
-
   <section class="project-section container">
     <div class="project-browser" data-project-browser>
       <aside class="project-selector" aria-label="Project selector">
@@ -44,12 +41,11 @@
           <span class="project-tab-index">01</span>
           <span><strong>FirstLight</strong><small>Public · Scientific software</small></span>
         </button>
-        <button class="project-tab" type="button" data-project-target="research-development" aria-pressed="false">
+        <button class="project-tab" type="button" data-project-target="tess-qpp" aria-pressed="false">
           <span class="project-tab-index">02</span>
-          <span><strong>Research in development</strong><small>Private · Preparing release</small></span>
+          <span><strong>TESS QPP</strong><small>Public · Independent research</small></span>
         </button>
       </aside>
-
       <div class="project-stage">
         <article class="project-panel is-active" data-project-panel="firstlight">
           <div class="project-stage-header">
@@ -69,41 +65,41 @@
           </dl>
           <div class="actions"><a class="button button-primary" href="https://github.com/marc-balboa-corominas/FirstLight">Open repository</a></div>
         </article>
-
-        <article class="project-panel" data-project-panel="research-development" hidden>
+        <article class="project-panel" data-project-panel="tess-qpp" hidden>
           <div class="project-stage-header">
             <div>
-              <p class="project-type">Independent scientific research</p>
-              <h2>Research in development</h2>
+              <p class="project-type">Independent astrophysics research</p>
+              <h2>TESS QPP</h2>
             </div>
-            <span class="status-pill status-private">Private</span>
+            <span class="status-pill status-public">Public</span>
           </div>
-          <p class="project-lead">An independent astrophysics project is currently being prepared for staged public release.</p>
-          <p class="project-description">The public page will be added when the scope, documentation, methodological status, and limitations are ready for external review.</p>
+          <p class="project-lead">Robustness and selection effects in short-period quasi-periodic pulsations observed with TESS.</p>
+          <p class="project-description">TESS QPP investigates how analysis choices, observational selection effects, and validation procedures influence the detection and interpretation of short-period quasi-periodic pulsations in stellar flares.</p>
           <dl class="project-facts">
-            <div><dt>Status</dt><dd>Active development</dd></div>
-            <div><dt>Public material</dt><dd>Not released yet</dd></div>
-            <div><dt>Release principle</dt><dd>Evidence and documentation first</dd></div>
+            <div><dt>Domain</dt><dd>Stellar astrophysics</dd></div>
+            <div><dt>Current stage</dt><dd>Catalogue-scale robustness design</dd></div>
+            <div><dt>Foundation</dt><dd>Baseline audit, synthetic benchmarks, observational pilot</dd></div>
+            <div><dt>Priorities</dt><dd>Robustness, validation, reproducibility</dd></div>
           </dl>
+          <div class="actions">
+            <a class="button button-primary" href="tess-qpp.html">View project</a>
+            <a class="button button-secondary project-button-secondary" href="https://github.com/marc-balboa-corominas/tess-qpp">Open repository</a>
+          </div>
         </article>
       </div>
     </div>
   </section>
 </main>
-
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>© 2026 Marc Balboa Corominas</p>
-    
-<div class="social-links" aria-label="Professional profiles">
-  <a class="icon-link" href="https://github.com/marc-balboa-corominas" rel="me" aria-label="GitHub"><img src="assets/icons/github.svg" alt=""></a>
-  <a class="icon-link" href="https://orcid.org/0009-0006-7571-9193" rel="me" aria-label="ORCID"><img src="assets/icons/orcid.svg" alt=""></a>
-  <a class="icon-link" href="https://www.linkedin.com/in/marc-balboa-corominas-b39a37172" rel="me" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
-</div>
-
+    <div class="social-links" aria-label="Professional profiles">
+      <a class="icon-link" href="https://github.com/marc-balboa-corominas" rel="me" aria-label="GitHub"><img src="assets/icons/github.svg" alt=""></a>
+      <a class="icon-link" href="https://orcid.org/0009-0006-7571-9193" rel="me" aria-label="ORCID"><img src="assets/icons/orcid.svg" alt=""></a>
+      <a class="icon-link" href="https://www.linkedin.com/in/marc-balboa-corominas-b39a37172" rel="me" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+    </div>
   </div>
 </footer>
-
 <script src="assets/js/projects.js"></script>
 </div>
 </body>
