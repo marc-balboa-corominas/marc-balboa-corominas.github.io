@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0b1220"/>
-  <path fill="#fff" d="M10 18h8.8l5.9 15.8L30.6 18h8.8v28h-6.6V29.8L27.2 46h-5L16.6 29.8V46H10zm32.1 0h7.2c6.3 0 10.7 3.5 10.7 9.2 0 4-2.1 6.8-5.4 8.1L60 46h-7.4l-4.5-9.2h-.1V46h-5.9zm5.9 5.8v7.4h1.3c2.8 0 4.2-1.2 4.2-3.7 0-2.4-1.5-3.7-4.2-3.7z"/>
-  <circle cx="51" cy="13" r="4" fill="#55d8cd"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#0b1220"/><text x="32" y="39" text-anchor="middle" fill="#fff" font-family="Arial" font-size="18" font-weight="700">MBC</text><circle cx="50" cy="14" r="4" fill="#55d8cd"/></svg>

@@ -1,3 +1,4 @@
+
 const entries = [...document.querySelectorAll(".education-entry")];
 const dots = [...document.querySelectorAll("[data-entry-link]")];
 
@@ -12,20 +13,10 @@ let ticking = false;
 let navigationLockUntil = 0;
 
 function activateEntry(entry) {
-  if (!entry || entry === currentEntry) {
-    return;
-  }
-
+  if (!entry || entry === currentEntry) return;
   currentEntry = entry;
-
-  entries.forEach((item) => {
-    item.classList.toggle("is-active", item === entry);
-  });
-
-  dots.forEach((dot) => {
-    dot.classList.toggle("is-active", dot.dataset.entryLink === entry.id);
-  });
-
+  entries.forEach(item => item.classList.toggle("is-active", item === entry));
+  dots.forEach(dot => dot.classList.toggle("is-active", dot.dataset.entryLink === entry.id));
   activeIndex.textContent = entry.dataset.index;
   activeYears.textContent = entry.dataset.years;
   activeTitle.textContent = entry.dataset.title;
@@ -35,26 +26,21 @@ function activateEntry(entry) {
 
 function selectClosestEntry() {
   ticking = false;
-
-  if (Date.now() < navigationLockUntil || entries.length === 0) {
-    return;
-  }
+  if (Date.now() < navigationLockUntil || entries.length === 0) return;
 
   const viewportTarget = window.innerHeight * 0.48;
   let closestEntry = entries[0];
   let closestDistance = Number.POSITIVE_INFINITY;
 
-  entries.forEach((entry) => {
+  entries.forEach(entry => {
     const rect = entry.getBoundingClientRect();
     const entryCenter = rect.top + rect.height / 2;
     const distance = Math.abs(entryCenter - viewportTarget);
-
     if (distance < closestDistance) {
       closestDistance = distance;
       closestEntry = entry;
     }
   });
-
   activateEntry(closestEntry);
 }
 
@@ -65,22 +51,13 @@ function requestSelection() {
   }
 }
 
-dots.forEach((dot) => {
+dots.forEach(dot => {
   dot.addEventListener("click", () => {
     const entry = document.getElementById(dot.dataset.entryLink);
-
-    if (!entry) {
-      return;
-    }
-
+    if (!entry) return;
     navigationLockUntil = Date.now() + 700;
     activateEntry(entry);
-
-    entry.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-
+    entry.scrollIntoView({ behavior: "smooth", block: "center" });
     window.setTimeout(() => {
       navigationLockUntil = 0;
       requestSelection();
