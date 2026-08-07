@@ -2,5 +2,4 @@
 
 Personal research and technical website of Marc Balboa Corominas.
 
-This version refines the About layout and justifies the internal-page text
-on desktop.
+Version 8.1 adds a final alignment adjustment for the About page hero text.
