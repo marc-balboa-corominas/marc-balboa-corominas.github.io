@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b1730">
 <title>TESS QPP | Marc Balboa Corominas</title>
-<meta name="description" content="TESS QPP is an independent research project investigating robustness, selection effects, and validation in short-period quasi-periodic pulsations observed in TESS stellar flares.">
+<meta name="description" content="TESS QPP is an independent research project investigating reproducibility, methodological robustness, numerical behaviour, and synthetic-domain selection properties in short-period quasi-periodic pulsation analysis with TESS.">
 <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -22,12 +22,12 @@
     <div class="qpp-hero-copy">
       <p class="eyebrow">Independent research · Stellar astrophysics</p>
       <h1>TESS QPP</h1>
-      <p class="qpp-subtitle">Robustness and selection effects in short-period quasi-periodic pulsations observed with TESS.</p>
-      <p class="qpp-intro">An independent research project investigating how methodological choices, observational selection effects, and validation procedures influence the detection and interpretation of short-period quasi-periodic pulsations in stellar flares observed by TESS.</p>
+      <p class="qpp-subtitle">Reproducibility, methodological robustness, and synthetic-domain selection in short-period QPP analysis with TESS.</p>
+      <p class="qpp-intro">An independent research project investigating how methodological choices, observational robustness, numerical behaviour, and synthetic known-truth evaluation shape the detection and interpretation of short-period quasi-periodic pulsations in stellar flares observed by TESS.</p>
       <div class="qpp-status-row">
-        <span class="qpp-chip qpp-chip-active">Active research</span>
-        <span class="qpp-chip">F0–F2 foundation complete</span>
-        <span class="qpp-chip">Work in progress · Not peer reviewed</span>
+        <span class="qpp-chip qpp-chip-active">Manuscript 1 complete</span>
+        <span class="qpp-chip">arXiv preprint prepared</span>
+        <span class="qpp-chip">Submission pending · Not peer reviewed</span>
       </div>
       <div class="actions">
         <a class="button button-primary" href="https://github.com/marc-balboa-corominas/tess-qpp">Open research repository</a>
@@ -36,7 +36,7 @@
     </div>
     <aside class="qpp-hero-visual" aria-label="TESS QPP project status">
       <div class="signal-card">
-        <div class="signal-card-top"><span>PROJECT STATUS</span><span>F0–F2 CLOSED</span></div>
+        <div class="signal-card-top"><span>PROJECT STATUS</span><span>MANUSCRIPT 1 COMPLETE</span></div>
         <svg viewBox="0 0 560 180" role="img" aria-label="Conceptual quasi-periodic signal illustration">
           <defs>
             <linearGradient id="signalGradient" x1="0" x2="1"><stop offset="0" stop-color="#55d8cd"/><stop offset="1" stop-color="#5b82ff"/></linearGradient>
@@ -44,29 +44,29 @@
           <path d="M0 95 C20 55, 35 140, 55 95 S90 60,110 95 S145 130,165 95 S200 65,220 95 S255 122,275 95 S310 70,330 95 S365 117,385 95 S420 74,440 95 S475 113,495 95 S530 77,560 95" fill="none" stroke="url(#signalGradient)" stroke-width="4" stroke-linecap="round"/>
           <path d="M0 95 C20 82, 35 108, 55 95 S90 85,110 95 S145 104,165 95 S200 88,220 95 S255 101,275 95 S310 90,330 95 S365 100,385 95 S420 91,440 95 S475 99,495 95 S530 92,560 95" fill="none" stroke="#ffffff" stroke-opacity=".2" stroke-width="1.5"/>
         </svg>
-        <div class="signal-card-grid"><div><strong>F0</strong><span>Baseline</span></div><div><strong>F1</strong><span>Synthetic</span></div><div><strong>F2</strong><span>Pilot</span></div><div class="is-next"><strong>F3</strong><span>Scale + validate</span></div></div>
+        <div class="signal-card-grid"><div><strong>F0–F2</strong><span>Foundation</span></div><div><strong>F3A</strong><span>Robustness</span></div><div><strong>F3B</strong><span>Held-out</span></div><div class="is-next"><strong>M1</strong><span>Preprint ready</span></div></div>
       </div>
     </aside>
   </section>
 
   <section class="qpp-section container">
-    <div class="qpp-section-heading"><p class="eyebrow">Origin</p><h2>From reproduction to a broader question</h2></div>
+    <div class="qpp-section-heading"><p class="eyebrow">Origin</p><h2>From reproduction to a broader methodological programme</h2></div>
     <div class="qpp-copy-wide">
       <p>The project began from a relatively focused question: how reproducible is a published short-period TESS QPP analysis when its effective methodological baseline is reconstructed and tested systematically?</p>
-      <p>That question gradually became broader.</p>
-      <p>Reconstructing the baseline required auditing the effective behaviour of the analysis procedure, while controlled synthetic experiments revealed that QPP support must be interpreted within a limited detectability domain. A subsequent observational pilot then showed that classification behaviour can change under reasonable variations of temporal window and processing choices.</p>
-      <p>These results do not establish whether individual QPPs are physically real or not. Instead, they motivate a more general methodological question:</p>
-      <blockquote class="qpp-question">Which properties of the signal, data, and analysis procedure determine whether a QPP classification remains stable?</blockquote>
+      <p>That question developed into a broader programme separating observational reproduction, methodological robustness, numerical behaviour, and synthetic known-truth performance.</p>
+      <p>Reconstructing the baseline required auditing the effective behaviour of the public AFINO workflow. Controlled synthetic experiments then mapped domain-dependent detectability and numerical behaviour, while observational pilot and catalogue-scale phases tested how classifications respond to prospectively specified changes in temporal window and processing.</p>
+      <p>These evidence layers are deliberately kept distinct. Observational reference labels are not treated as physical ground truth, and synthetic performance is not automatically transported to the real TESS population.</p>
+      <blockquote class="qpp-question">What can be established when reproduction, observational robustness, numerical stability, and synthetic ground truth are evaluated without collapsing their different truth conditions?</blockquote>
     </div>
   </section>
 
   <section class="qpp-section qpp-section-soft">
     <div class="container">
-      <div class="qpp-section-heading"><p class="eyebrow">Completed foundation</p><h2>A completed methodological foundation</h2><p>The first three phases of the project are now closed and preserved as a frozen methodological and observational foundation.</p></div>
+      <div class="qpp-section-heading"><p class="eyebrow">Completed programme</p><h2>Manuscript 1 evidence is complete</h2><p>The scientific work supporting the first manuscript is complete and frozen across distinct evidence planes.</p></div>
       <div class="phase-grid">
-        <article class="phase-card"><span class="phase-index">F0</span><h3>Baseline reconstruction &amp; audit</h3><p>Reconstruction and audit of the effective analysis baseline, including the behaviour required to reproduce the relevant AFINO 0.5 workflow and the observational inputs used in subsequent testing.</p><span class="phase-state">Completed</span></article>
-        <article class="phase-card"><span class="phase-index">F1</span><h3>Controlled synthetic benchmarks</h3><p>Synthetic experiments explored detectability under controlled conditions, including red-noise backgrounds, nested temporal windows, optimizer stability, numerical behaviour, and period recovery.</p><span class="phase-state">Completed</span></article>
-        <article class="phase-card"><span class="phase-index">F2</span><h3>Pilot observational robustness</h3><p>The methodological questions were transferred to a small observational pilot. The objective was not to establish physical ground truth, but to test whether classifications and inferred properties remained stable when analysis conditions were perturbed.</p><span class="phase-state">Completed</span></article>
+        <article class="phase-card"><span class="phase-index">F0–F2</span><h3>Foundation</h3><p>Baseline reconstruction, controlled synthetic benchmarks, and a prospectively specified observational robustness pilot established the initial methodological foundation.</p><span class="phase-state">Completed</span></article>
+        <article class="phase-card"><span class="phase-index">F3A</span><h3>Catalogue-scale observational robustness</h3><p>The pilot architecture was extended to 122 observational references with an explicit baseline-reproduction gate, input-admissibility accounting, seed checks, and conditional period robustness.</p><span class="phase-state">Completed &amp; frozen</span></article>
+        <article class="phase-card"><span class="phase-index">F3B</span><h3>Synthetic ground truth &amp; HELDOUT</h3><p>A separately developed synthetic programme used prospectively separated DEVELOPMENT and independent single-use HELDOUT evidence to characterize the frozen baseline within its designed domain.</p><span class="phase-state">Completed &amp; frozen</span></article>
       </div>
     </div>
   </section>
@@ -74,31 +74,31 @@
   <section class="qpp-section container">
     <div class="qpp-two-column">
       <div>
-        <p class="eyebrow">Initial evidence</p>
-        <h2>What the pilot motivates</h2>
-        <p>The completed foundation points to a distinction that will remain central to the project: numerical stability, period stability, classification stability, and physical interpretation are not equivalent forms of evidence.</p>
-        <p>Within the observational pilot, some classifications were sensitive to changes in temporal window or processing, while other quantities could remain stable conditional on the event retaining QPP support.</p>
-        <p>The pilot is intentionally too small to establish how general these behaviours are. Its role is instead to define the next question: whether the same patterns persist, disappear, or become heterogeneous when the analysis is extended to a substantially broader observational sample.</p>
+        <p class="eyebrow">Main methodological result</p>
+        <h2>Different questions require different evidence</h2>
+        <p>The completed programme shows why reproducibility, robustness, numerical stability, and classification performance should not be treated as interchangeable concepts.</p>
+        <p>At catalogue scale, many published-QPP references do not reproduce their frozen reference state under the project baseline, so subsequent robustness claims are conditioned on baseline-concordant cases rather than interpreted as observational accuracy.</p>
+        <p>Within the independent synthetic HELDOUT domain, the untouched AFINO 0.5 rule shows a low-sensitivity, very-high-specificity operating profile. Those known-truth metrics remain synthetic-domain results rather than observational performance estimates.</p>
       </div>
       <aside class="limits-card">
-        <p class="eyebrow">Current limits</p>
-        <h3>What this does not establish</h3>
-        <p>The project has not yet established observational sensitivity or specificity, an observational false-positive rate, physical ground truth for the analysed events, or a validated correction of the detection procedure.</p>
-        <p>Comparison events are not treated as known physical negatives, and numerical optimizer stability is not interpreted as proof of a unique optimum.</p>
-        <p>These distinctions are deliberate. The next stages are designed to test which claims can be strengthened and which must remain limited.</p>
+        <p class="eyebrow">Interpretation boundaries</p>
+        <h3>What Manuscript 1 does not claim</h3>
+        <p>The completed work does not establish observational physical validation of AFINO, physical truth for individual observational reference labels, or observational sensitivity, specificity, or false-positive rate.</p>
+        <p>The synthetic HELDOUT selection surface is not treated as a validated correction for the real TESS population, and binary seed stability is not interpreted as proof of unique optimizer convergence.</p>
+        <p>Later population and physical-inference work requires new evidence beyond the Manuscript 1 freeze.</p>
       </aside>
     </div>
   </section>
 
   <section class="qpp-section qpp-section-roadmap" id="roadmap">
     <div class="container">
-      <div class="qpp-section-heading"><p class="eyebrow">Research roadmap</p><h2>Build evidence before expanding claims</h2></div>
+      <div class="qpp-section-heading"><p class="eyebrow">Research roadmap</p><h2>Manuscript 1 complete, public preprint next</h2></div>
       <div class="roadmap-track">
         <div class="roadmap-group"><span class="roadmap-label">Foundation</span><div class="roadmap-step is-complete"><strong>F0</strong><span>Baseline reconstruction &amp; audit</span><small>Completed</small></div><div class="roadmap-arrow">↓</div><div class="roadmap-step is-complete"><strong>F1</strong><span>Synthetic benchmarks &amp; numerical behaviour</span><small>Completed</small></div><div class="roadmap-arrow">↓</div><div class="roadmap-step is-complete"><strong>F2</strong><span>Pilot observational robustness</span><small>Completed</small></div></div>
         <div class="roadmap-bridge">→</div>
-        <div class="roadmap-group"><span class="roadmap-label">Current direction</span><div class="roadmap-step is-current"><strong>F3A</strong><span>Catalogue-scale observational robustness</span><small>Next stage</small></div><div class="roadmap-arrow">↓</div><div class="roadmap-step"><strong>F3B</strong><span>Injection–recovery &amp; independent validation</span><small>Planned</small></div><div class="roadmap-arrow">↓</div><div class="roadmap-step"><strong>Manuscript stage</strong><span>Robustness, selection effects &amp; validation</span><small>Downstream</small></div></div>
+        <div class="roadmap-group"><span class="roadmap-label">Manuscript 1 evidence</span><div class="roadmap-step is-complete"><strong>F3A</strong><span>Catalogue-scale observational robustness</span><small>Completed</small></div><div class="roadmap-arrow">↓</div><div class="roadmap-step is-complete"><strong>F3B</strong><span>Injection–recovery &amp; independent HELDOUT</span><small>Completed</small></div><div class="roadmap-arrow">↓</div><div class="roadmap-step is-complete"><strong>Manuscript 1</strong><span>Robustness, selection properties &amp; validation architecture</span><small>Completed</small></div></div>
         <div class="roadmap-bridge">→</div>
-        <div class="roadmap-group"><span class="roadmap-label">Longer-term direction</span><div class="roadmap-step"><strong>Population</strong><span>Selection effects &amp; correction</span><small>Later stage</small></div><div class="roadmap-arrow">↓</div><div class="roadmap-step"><strong>Physics</strong><span>Relations &amp; sensitivity analysis</span><small>Later stage</small></div><div class="roadmap-arrow">↓</div><div class="roadmap-step"><strong>Inference</strong><span>Population and physical interpretation</span><small>Later stage</small></div></div>
+        <div class="roadmap-group"><span class="roadmap-label">Publication &amp; later work</span><div class="roadmap-step is-current"><strong>arXiv</strong><span>Journal-neutral public preprint</span><small>Submission pending</small></div><div class="roadmap-arrow">↓</div><div class="roadmap-step"><strong>Peer review</strong><span>Journal submission</span><small>Pending</small></div><div class="roadmap-arrow">↓</div><div class="roadmap-step"><strong>Later phases</strong><span>Population &amp; physical inference</span><small>Future work</small></div></div>
       </div>
     </div>
   </section>
@@ -107,17 +107,17 @@
     <div class="qpp-two-column">
       <div>
         <p class="eyebrow">Current stage</p>
-        <h2>Preparing the next observational test</h2>
-        <p>The F0–F2 foundation is complete.</p>
-        <p>Current work is focused on reviewing the recent methodological and observational literature and preparing the prospective design for the next catalogue-scale stage.</p>
-        <p>The next observational analysis will test whether the robustness patterns seen in the pilot generalize beyond the initial cohort. A subsequent validation stage will use explicit ground truth and held-out evaluation to address questions that observational robustness alone cannot answer.</p>
+        <h2>Preparing the public preprint</h2>
+        <p>The scientific work for Manuscript 1 is complete.</p>
+        <p>An author-approved journal-neutral arXiv preprint has been prepared from the frozen scientific content, including a transparency acknowledgment describing selective use of generative AI for editorial and technical assistance.</p>
+        <p>The immediate next step is public-preprint submission. No arXiv identifier or journal-submission status is claimed here until those events actually occur.</p>
       </div>
       <div class="repo-card">
-        <p class="eyebrow">Open development</p>
-        <h3>Follow the research as it develops</h3>
-        <p>The development repository is public so that the structure and evolution of the project can be inspected as the work progresses.</p>
-        <p>It includes the Git-compatible documentary foundation of F0–F2, project governance and decision records, prospective design material, and workspaces supporting the next phases.</p>
-        <p class="repo-note">The repository is an active research workspace rather than a final scientific release. Intermediate material may evolve until a phase is explicitly frozen or released.</p>
+        <p class="eyebrow">Open research record</p>
+        <h3>Inspect the project history</h3>
+        <p>The public repository preserves the project structure, frozen scientific phases, decision records, manuscript history, and the current arXiv-neutral preprint workspace.</p>
+        <p>The transparency-amended pre-submission state is frozen under the Git tag <strong>manuscript1-arxiv-neutral-v1.1</strong>.</p>
+        <p class="repo-note">Historical protocols, decisions, and freezes are preserved rather than rewritten to match the current publication state.</p>
         <a class="button button-primary" href="https://github.com/marc-balboa-corominas/tess-qpp">Open research repository</a>
       </div>
     </div>
@@ -125,20 +125,20 @@
 
   <section class="qpp-section qpp-section-soft">
     <div class="container">
-      <div class="qpp-section-heading"><p class="eyebrow">Research principles</p><h2>How the project is being developed</h2></div>
+      <div class="qpp-section-heading"><p class="eyebrow">Research principles</p><h2>How the project is developed</h2></div>
       <div class="principles-grid">
-        <article><span class="principle-number">01</span><h3>Reproducibility</h3><p>Methods, decisions, and scientific boundaries are recorded before results are promoted as conclusions.</p></article>
-        <article><span class="principle-number">02</span><h3>Separation of evidence</h3><p>Synthetic ground truth, observational robustness, numerical behaviour, and physical interpretation are treated as distinct evidence layers.</p></article>
-        <article><span class="principle-number">03</span><h3>Staged validation</h3><p>Claims are expanded only when the corresponding validation stage supports them.</p></article>
+        <article><span class="principle-number">01</span><h3>Reproducibility</h3><p>Methods, decisions, and scientific boundaries are recorded and frozen at explicit checkpoints.</p></article>
+        <article><span class="principle-number">02</span><h3>Separation of evidence</h3><p>Observational reproduction, observational robustness, numerical behaviour, synthetic ground truth, and physical interpretation remain distinct evidence layers.</p></article>
+        <article><span class="principle-number">03</span><h3>Bounded claims</h3><p>Claims are expanded only when the corresponding evidence supports them, and unresolved limitations remain visible in the public record.</p></article>
       </div>
     </div>
   </section>
 
   <section class="qpp-section container qpp-final-section">
     <p class="eyebrow">Research status</p>
-    <h2>Active research, communicated at scientific checkpoints</h2>
-    <p>TESS QPP is an independent research project in active development. The material presented here documents the development of the research and has not yet undergone peer review.</p>
-    <p>Major updates will be added at selected scientific checkpoints rather than after every intermediate analysis step.</p>
+    <h2>Manuscript 1 complete, arXiv submission pending</h2>
+    <p>TESS QPP remains an active independent research programme. The first manuscript is complete and its journal-neutral preprint is prepared, but the work has not yet undergone peer review.</p>
+    <p>Major public updates are added at selected scientific checkpoints rather than after every intermediate analysis step.</p>
     <div class="actions"><a class="button button-primary" href="https://github.com/marc-balboa-corominas/tess-qpp">GitHub repository</a><a class="button button-secondary" href="projects.html">Projects</a><a class="button button-secondary" href="research.html">Research profile</a></div>
   </section>
 </main>
